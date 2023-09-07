@@ -757,10 +757,20 @@ footer {
 
 .copyright {
     text-align: center;
-    background-color: #ff7708;
+    background: rgba(195, 86, 50, 0.578);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     padding: 14px 0px;
     margin: 50px 0px 0px 0px;
+}
+.copyright:hover{
+    text-align: center;
+    background: rgb(195, 86, 50);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #390909;
+    padding: 14px 0px;
+    margin: 50px 0px 0px 0px;
+
 }
 
 .footer-par {

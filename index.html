@@ -20,7 +20,8 @@
 <body>
 
     <div id="arrow">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+       
+        <button onclick="topFunction()" id="myBtn" title="Go to top" > <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
     </div>
 
     <nav>
@@ -192,18 +193,34 @@
             <ul class="card-wrapper">
   <li class="card">
     <img src='images/slider/delhi.jpg' alt=''>
-    <h3><a href="">Delhi</a></h3>
+    <h3><a href="https://www.thrillophilia.com/places-to-visit-in-delhi-with-friends">Delhi</a></h3>
     <p>The Capital of India</p>
   </li>
   <li class="card">
     <img src='images/slider/mumbai.jpg' alt=''>
-    <h3><a href="">Mumbai</a></h3>
+    <h3><a href="https://www.thrillophilia.com/weekend-getaways-near-mumbai">Mumbai</a></h3>
     <p>The financial Capital Of India</p>
   </li>
   <li class="card">
     <img src='images/slider/banglore.jpg' alt=''>
-    <h3><a href="">Banglore</a></h3>
+    <h3><a href="https://www.thrillophilia.com/places-to-visit-in-delhi-with-friends">Banglore</a></h3>
     <p>Silicon Valley Of India</p>
+  </li>
+  
+  <li class="card">
+    <img src='images/images.jpeg' alt=''>
+    <h3><a href="https://www.thrillophilia.com/weekend-getaways-near-mumbai">Kolkata</a></h3>
+    <p>The City of Joy </p>
+  </li>
+  <li class="card">
+    <img src='images/hawamahal.jpeg' alt=''>
+    <h3><a href="https://www.thrillophilia.com/weekend-getaways-near-mumbai">Jaipur</a></h3>
+    <p>The Pink City Of India</p>
+  </li>
+  <li class="card">
+    <img src='images/chennai.jpeg' alt=''>
+    <h3><a href="https://www.thrillophilia.com/weekend-getaways-from-chennai">Chennai</a></h3>
+    <p>Gateway to South India</p>
   </li>
 </ul>
 
@@ -277,11 +294,13 @@
     </section>
 
 
-    <footer>
+    <footer style="background-image: url(images/footer.png) ;
+    background-size: 100%;
+    ">
         <div class="container">
             <div class="footer-par">
                 <div class="footer-1">
-                    <h2>Travel with us</h2>
+                    <h2 style="color:whitesmoke; font-family: cursive;">Travel with us</h2>
                 </div>
                 <div class="footer-2 fot-info">
                     <h3>Dekho Apna Desh!</h3>
@@ -310,9 +329,28 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">Developed by the Innovate-X Team</p>
+        <p class="copyright" >Developed by the Innovate-X Team</p>
+        
     </footer>
-
+<script>// Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }</script>
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
